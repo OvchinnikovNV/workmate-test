@@ -1,0 +1,32 @@
+{
+  "Marketing": {
+    "hours": 160,
+    "payout": 8000,
+    "employees": [
+      {
+        "name": "Alice Johnson",
+        "hours": 160,
+        "rate": 50,
+        "payout": 8000
+      }
+    ]
+  },
+  "Design": {
+    "hours": 320,
+    "payout": 16200,
+    "employees": [
+      {
+        "name": "Bob Smith",
+        "hours": 150,
+        "rate": 40,
+        "payout": 6000
+      },
+      {
+        "name": "Carol Williams",
+        "hours": 170,
+        "rate": 60,
+        "payout": 10200
+      }
+    ]
+  }
+}
