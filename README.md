@@ -4,6 +4,12 @@
 - [Результат для data1.csv](#result1)
 - [Результат для трех файлов](#result-all)
 
+## Пример запуска скрипта из корня проекта
+
+```
+python3 src/main.py data/data1.csv data/data2.csv data/data3.csv --report payout
+```
+
 <h2 id="usage">Usage</h2>
 
 ```
