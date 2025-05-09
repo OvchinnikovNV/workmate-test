@@ -54,7 +54,7 @@ class MyArgumentParser(ArgumentParser):
         elif 'arguments are required: files' in message:
             _message = f"Не передано ни одного файла с данными"
             self.print_usage(sys.stderr)
-        elif '-o/--output: invalid choice' in message:
+        elif '-f/--format: invalid choice' in message:
             _message = f"Указан неверный выходной формат. Доступные варианты: {[f.value for f in ReportOutputFormat]}"
         else:
             _message = message

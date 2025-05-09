@@ -1,6 +1,8 @@
 - [Usage](#usage)
 - [Добавление нового отчета](#new-report)
 - [Добавление нового выходного формата](#new-formet)
+- [Результат для data1.csv](#result1)
+- [Результат для трех файлов](#result-all)
 
 <h2 id="usage">Usage</h2>
 
@@ -50,3 +52,125 @@ options:
     @classmethod
     def _write_report_txt(cls, report: dict, filename: str) -> None:
     ```
+
+<h2 id="result1">Результат для data1.csv</h2>
+
+```json
+{
+     "Marketing": {
+          "hours": 160,
+          "payout": 8000,
+          "employees": [
+               {
+                    "name": "Alice Johnson",
+                    "hours": 160,
+                    "rate": 50,
+                    "payout": 8000
+               }
+          ]
+     },
+     "Design": {
+          "hours": 320,
+          "payout": 16200,
+          "employees": [
+               {
+                    "name": "Bob Smith",
+                    "hours": 150,
+                    "rate": 40,
+                    "payout": 6000
+               },
+               {
+                    "name": "Carol Williams",
+                    "hours": 170,
+                    "rate": 60,
+                    "payout": 10200
+               }
+          ]
+     }
+}
+```
+
+<h2 id="result-all">Результат для трех файлов</h2>
+
+```json
+{
+     "Marketing": {
+          "hours": 310,
+          "payout": 13250,
+          "employees": [
+               {
+                    "name": "Alice Johnson",
+                    "hours": 160,
+                    "rate": 50,
+                    "payout": 8000
+               },
+               {
+                    "name": "Henry Martin",
+                    "hours": 150,
+                    "rate": 35,
+                    "payout": 5250
+               }
+          ]
+     },
+     "Design": {
+          "hours": 320,
+          "payout": 16200,
+          "employees": [
+               {
+                    "name": "Bob Smith",
+                    "hours": 150,
+                    "rate": 40,
+                    "payout": 6000
+               },
+               {
+                    "name": "Carol Williams",
+                    "hours": 170,
+                    "rate": 60,
+                    "payout": 10200
+               }
+          ]
+     },
+     "HR": {
+          "hours": 473,
+          "payout": 19714,
+          "employees": [
+               {
+                    "name": "Grace Lee",
+                    "hours": 160,
+                    "rate": 45,
+                    "payout": 7200
+               },
+               {
+                    "name": "Ivy Clark",
+                    "hours": 158,
+                    "rate": 38,
+                    "payout": 6004
+               },
+               {
+                    "name": "Liam Harris",
+                    "hours": 155,
+                    "rate": 42,
+                    "payout": 6510
+               }
+          ]
+     },
+     "Sales": {
+          "hours": 325,
+          "payout": 14170,
+          "employees": [
+               {
+                    "name": "Karen White",
+                    "hours": 165,
+                    "rate": 50,
+                    "payout": 8250
+               },
+               {
+                    "name": "Mia Young",
+                    "hours": 160,
+                    "rate": 37,
+                    "payout": 5920
+               }
+          ]
+     }
+}
+```
